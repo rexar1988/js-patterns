@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Patterns: Singleton</title>
+</head>
+<body>
+
+<script src="./singleton.js"></script>
+<script>
+    const singleton1 = new Singleton();
+    const singleton2 = new Singleton();
+
+    singleton1.increase();
+    singleton1.increase();
+    singleton1.increase();
+    singleton2.increase();
+    singleton2.increase();
+
+    console.log('1', singleton1.getCount());
+    console.log('2', singleton2.getCount());
+</script>
+</body>
+</html>

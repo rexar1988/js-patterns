@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Patterns: Factory Method</title>
+</head>
+<body>
+<script src="factory-method.js"></script>
+<script>
+    const carFactory = new CarFactory();
+
+    const bmw = carFactory.create('bmw');
+    const audi = carFactory.create('audi');
+
+    console.log(bmw);
+    console.log(audi);
+</script>
+</body>
+</html>
