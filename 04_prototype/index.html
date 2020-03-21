@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Patterns: Abstract Factory</title>
+</head>
+<body>
+<script src="prototype.js"></script>
+<script>
+    const prototypeCar = new Car('X5', 8000, true, false);
+
+    const car1 = prototypeCar.produce();
+    const car2 = prototypeCar.produce();
+    const car3 = prototypeCar.produce();
+
+    car1.model = 'X7';
+    car1.color = 'black';
+
+    car2.autopilot = true;
+    car2.price = 5000;
+
+    car3.insurance = false;
+
+    console.log(car1, car2, car3);
+</script>
+</body>
+</html>
